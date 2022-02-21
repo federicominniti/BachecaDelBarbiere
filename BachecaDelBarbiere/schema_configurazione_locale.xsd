@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- configurazione_locale.xsd -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ConfigurazioneLocaleXML">
+        <xs:complexType>
+            <xs:sequence>
+				<xs:element name="font" type="xs:string"/>
+                <xs:element name="dimensioneFont" type="xs:float"/>
+                <xs:element name="dimensioniFinestra">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="larghezza" type="xs:double"/>
+							<xs:element name="altezza" type="xs:double"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sfondoFinestra" type="xs:string"/>
+				<xs:element name="sfondoInserisci" type="xs:string"/>
+				<xs:element name="sfondoElimina" type="xs:string"/>
+				<xs:element name="sfondoFatto" type="xs:string"/>
+				<xs:element name="serviziDisponibili">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="servizio" type="xs:string" minOccurs="3" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+				<xs:element name="datiAccessoArchivio">
+                    <xs:complexType>
+                        <xs:sequence>
+							<xs:element name="ipArchivio" type="xs:string"/>
+							<xs:element name="usernameArchivio" type="xs:string"/>
+							<xs:element name="passwordArchivio" type="xs:string"/>
+							<xs:element name="portaArchivio" type="xs:short"/>
+						</xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ipClient" type="xs:string"/>
+            <xs:attribute name="ipServerLog" type="xs:string"/>
+            <xs:attribute name="portaServerLog" type="xs:short"/>
+			<xs:attribute name="numeroAppuntamentiVisibili" type="xs:integer"/>
+			<xs:attribute name="giorniPeriodoDefault" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
