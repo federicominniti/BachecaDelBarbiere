@@ -8,6 +8,8 @@ BachecaDelBarbiere is a simple JavaFX application where a barber can organize an
 - To create a JavaFX application programming the grafic user interface and studing grafic components (without GUI generator softwares)
 - To maintain a front-end/middleware/backend division in the classes structure
 - To develop a good quality code
+- To store data on MySQL database
+- To create a log server
 
 ## Repository structure
  - `BachecaDelBarbiere`: JavaFX application
