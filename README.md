@@ -12,3 +12,6 @@ BachecaDelBarbiere is a simple JavaFX application where a barber can organize an
 ## Repository structure
  - `BachecaDelBarbiere`: JavaFX application
  - `ServerLogBachecaDelBarbiere`: log server that register the user actions
+
+## Preview
+<img src="preview.png" alt="preview" width="600px"/> 
